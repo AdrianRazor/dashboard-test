@@ -10,7 +10,79 @@
 
   <body>
     <header class="header">
-      <div class="container"></div>
+      <div class="header__container">
+        <div class="logo">
+          <img src="/img/logo.svg" alt="logo" />
+        </div>
+
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#key" />
+              </svg>
+              <p>Dashboard</p>
+              <svg class="nav__arrow" width="16" height="16">
+                <use xlink:href="img/sprite.svg#arrowRight" />
+              </svg>
+            </li>
+            <li class="nav__item">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#cube" />
+              </svg>
+              <p>Product</p>
+              <svg class="nav__arrow" width="16" height="16">
+                <use xlink:href="img/sprite.svg#arrowRight" />
+              </svg>
+            </li>
+            <li class="nav__item active">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#user" />
+              </svg>
+              <p>Customers</p>
+              <svg class="nav__arrow" width="16" height="16">
+                <use xlink:href="img/sprite.svg#arrowRight" />
+              </svg>
+            </li>
+            <li class="nav__item">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#wallet" />
+              </svg>
+              <p>Income</p>
+              <svg class="nav__arrow" width="16" height="16">
+                <use xlink:href="img/sprite.svg#arrowRight" />
+              </svg>
+            </li>
+            <li class="nav__item">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#discount" />
+              </svg>
+              <p>Promote</p>
+              <svg class="nav__arrow" width="16" height="16">
+                <use xlink:href="img/sprite.svg#arrowRight" />
+              </svg>
+            </li>
+            <li class="nav__item">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#help" />
+              </svg>
+              <p>Help</p>
+              <svg class="nav__arrow" width="16" height="16">
+                <use xlink:href="img/sprite.svg#arrowRight" />
+              </svg>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__user">
+          <div class="header__photo">
+            <img src="img/user.jpg" alt="user photo" />
+          </div>
+
+          <p class="header__name">Evano</p>
+          <p class="header__post">Project Manager</p>
+        </div>
+      </div>
     </header>
 
     <main class="main">
@@ -36,12 +108,12 @@
 
             <ul class="table__body">
               <li class="table__head">
-                <p class="text text--grey">Customer Name</p>
-                <p class="text text--grey">Company</p>
-                <p class="text text--grey">Phone Number</p>
-                <p class="text text--grey">Email</p>
-                <p class="text text--grey">Country</p>
-                <p class="text text--grey">Status</p>
+                <p>Customer Name</p>
+                <p>Company</p>
+                <p>Phone Number</p>
+                <p>Email</p>
+                <p>Country</p>
+                <p>Status</p>
               </li>
 
               <li class="table__row">

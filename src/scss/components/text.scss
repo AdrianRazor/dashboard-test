@@ -1,6 +1,10 @@
 .text {
   color: $dark;
 
+  &--grey {
+    color: $grey;
+  }
+
   &--grey-2 {
     color: $grey-2;
   }

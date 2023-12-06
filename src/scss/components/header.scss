@@ -1,4 +1,54 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 306px;
+  height: 100dvh;
+
+  background: $white;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    padding: 37px 28px 76px;
+  }
+
+  &__nav {
+    margin-top: 54px;
+  }
+
+  &__user {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0 12px;
+
+    margin-top: auto;
+  }
+
+  &__photo {
+    grid-row: span 2;
+
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__name {
+    letter-spacing: 0.14px;
+    color: $black;
+  }
+
+  &__post {
+    font-weight: 400;
+    letter-spacing: 0.12px;
+    color: $grey-1;
+  }
 }
 
 // @media (max-width: 767px) {

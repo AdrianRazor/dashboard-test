@@ -1,0 +1,29 @@
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 11px 8px 11px;
+
+    letter-spacing: -0.14px;
+    color: $grey;
+
+    border-radius: 8px;
+
+    &.active {
+      color: $white;
+      background: $purple;
+    }
+  }
+
+  &__arrow {
+    margin-left: auto;
+  }
+}
