@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container"></div>
+    </header>
+
+    <main class="main">
+      <section class="board">
+        <div class="board__container">
+          <h1 class="title">Hello Evano &#128075;,</h1>
+
+          <div class="table">
+            <div class="table__top">
+              <div class="table__name">
+                <h2 class="headline">All Customers</h2>
+                <p class="table__subtitle">Active Members</p>
+              </div>
+
+              <div class="search">
+                <input id="search" type="search" placeholder="Search" />
+
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprite.svg#search" />
+                </svg>
+              </div>
+            </div>
+
+            <ul class="table__body">
+              <li class="table__head">
+                <p class="text text--grey">Customer Name</p>
+                <p class="text text--grey">Company</p>
+                <p class="text text--grey">Phone Number</p>
+                <p class="text text--grey">Email</p>
+                <p class="text text--grey">Country</p>
+                <p class="text text--grey">Status</p>
+              </li>
+
+              <li class="table__row">
+                <p class="text">Jane Cooper</p>
+                <p class="text">Microsoft</p>
+                <p class="text">(225) 555-0118</p>
+                <p class="text">jane@microsoft.com</p>
+                <p class="text">United States</p>
+
+                <div class="status">Active</div>
+              </li>
+              <li class="table__row">
+                <p class="text">Floyd Miles</p>
+                <p class="text">Yahoo</p>
+                <p class="text">(205) 555-0100</p>
+                <p class="text">floyd@yahoo.com</p>
+                <p class="text">Kiribati</p>
+
+                <div class="status status--inactive">Inactive</div>
+              </li>
+              <li class="table__row">
+                <p class="text">Ronald Richards</p>
+                <p class="text">Adobe</p>
+                <p class="text">(302) 555-0107</p>
+                <p class="text">ronald@adobe.com</p>
+                <p class="text">Israel</p>
+
+                <div class="status status--inactive">Inactive</div>
+              </li>
+              <li class="table__row">
+                <p class="text">Marvin McKinney</p>
+                <p class="text">Tesla</p>
+                <p class="text">(252) 555-0126</p>
+                <p class="text">marvin@tesla.com</p>
+                <p class="text">Iran</p>
+
+                <div class="status">Active</div>
+              </li>
+              <li class="table__row">
+                <p class="text">Jerome Bell</p>
+                <p class="text">Google</p>
+                <p class="text">(629) 555-0129</p>
+                <p class="text">jerome@google.com</p>
+                <p class="text">Réunion</p>
+
+                <div class="status">Active</div>
+              </li>
+              <li class="table__row">
+                <p class="text">Kathryn Murphy</p>
+                <p class="text">Microsoft</p>
+                <p class="text">(406) 555-0120</p>
+                <p class="text">kathryn@microsoft.com</p>
+                <p class="text">Curaçao</p>
+
+                <div class="status">Active</div>
+              </li>
+              <li class="table__row">
+                <p class="text">Jacob Jones</p>
+                <p class="text">Yahoo</p>
+                <p class="text">(208) 555-0112</p>
+                <p class="text">jacob@yahoo.com</p>
+                <p class="text">Brazil</p>
+
+                <div class="status">Active</div>
+              </li>
+              <li class="table__row">
+                <p class="text">Kristin Watson</p>
+                <p class="text">Facebook</p>
+                <p class="text">(704) 555-0127</p>
+                <p class="text">kristin@facebook.com</p>
+                <p class="text">Åland Islands</p>
+
+                <div class="status status--inactive">Inactive</div>
+              </li>
+            </ul>
+
+            <div class="table__bottom">
+              <p class="text text--grey-2">
+                Showing data 1 to 8 of 256K entries
+              </p>
+
+              <ul class="pagination">
+                <li class="pagination__item"><</li>
+
+                <li class="pagination__item active">1</li>
+                <li class="pagination__item">2</li>
+                <li class="pagination__item">3</li>
+                <li class="pagination__item">4</li>
+                <li class="pagination__item dots">...</li>
+                <li class="pagination__item">40</li>
+
+                <li class="pagination__item">></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

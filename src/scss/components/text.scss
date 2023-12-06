@@ -1,0 +1,13 @@
+.text {
+  color: $dark;
+
+  &--grey-2 {
+    color: $grey-2;
+  }
+}
+
+// @media (max-width: 767px) {
+//   .text {
+//     font-size: 14px;
+//   }
+// }

@@ -1,0 +1,34 @@
+.search {
+  position: relative;
+
+  input {
+    width: 216px;
+    height: 38px;
+    padding: 0 10px 0 40px;
+
+    color: $grey-1;
+
+    border-radius: 10px;
+    background: $grey-5;
+
+    &::placeholder {
+      color: $grey-2;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    color: $grey-1;
+  }
+}
+
+// @media (max-width: 767px) {
+//   .search {
+//     font-size: 14px;
+//   }
+// }

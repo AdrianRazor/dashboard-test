@@ -1,0 +1,41 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+
+    font-size: 12px;
+    letter-spacing: -0.12px;
+    color: $dark-grey;
+
+    border-radius: 4px;
+    border: 1px solid $grey-3;
+    background: $grey-4;
+
+    &.active {
+      color: $white;
+      background: $purple;
+    }
+
+    &.dots {
+      padding: 0;
+
+      color: $black;
+
+      border: none;
+      background: none;
+    }
+  }
+}
+
+// @media (max-width: 767px) {
+//   .pagination {
+//   }
+// }

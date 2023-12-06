@@ -1,0 +1,25 @@
+.status {
+  width: 80px;
+  padding: 4px 12px;
+
+  line-height: normal;
+  letter-spacing: -0.14px;
+  text-align: center;
+  color: $green;
+
+  background: $green-bg;
+  border: 1px solid $green;
+  border-radius: 4px;
+
+  &--inactive {
+    color: $red;
+
+    background: $red-bg;
+    border-color: $red;
+  }
+}
+
+// @media (max-width: 767px) {
+//   .status {
+//   }
+// }
