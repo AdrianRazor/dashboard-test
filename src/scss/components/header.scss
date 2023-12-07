@@ -18,7 +18,7 @@
   }
 
   &__nav {
-    margin-top: 54px;
+    margin-top: 52px;
   }
 
   &__user {
@@ -49,9 +49,53 @@
     letter-spacing: 0.12px;
     color: $grey-1;
   }
+
+  &__burger {
+    display: none;
+  }
 }
 
-// @media (max-width: 767px) {
-//   .header {
-//   }
-// }
+@media (max-width: 1279px) {
+  .header {
+    width: 84px;
+
+    &__container {
+      padding: 30px 20px 50px;
+    }
+
+    &__user {
+      display: block;
+    }
+
+    &__name,
+    &__post {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .header {
+    position: static;
+
+    width: 100%;
+    height: initial;
+
+    &__container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 20px 15px;
+    }
+
+    &__nav,
+    &__user {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
+}

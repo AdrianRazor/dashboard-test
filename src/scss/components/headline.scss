@@ -5,3 +5,9 @@
   letter-spacing: -0.22px;
   color: $black;
 }
+
+@media (max-width: 767px) {
+  .headline {
+    font-size: 18px;
+  }
+}

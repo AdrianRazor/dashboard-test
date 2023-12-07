@@ -2,7 +2,23 @@
   width: 195px;
 }
 
-// @media (max-width: 767px) {
-//   .logo {
-//   }
-// }
+@media (max-width: 1279px) {
+  .logo {
+    width: 44px;
+    overflow: hidden;
+
+    img {
+      width: initial;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .logo {
+    width: 195px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

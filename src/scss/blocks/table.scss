@@ -26,7 +26,7 @@
   &__head,
   &__row {
     display: grid;
-    grid-template-columns: repeat(5, 1fr) 80px;
+    grid-template-columns: 18% 13% 16% 1fr 14% 80px;
     align-items: center;
     gap: 15px;
 
@@ -34,15 +34,97 @@
   }
 
   &__head {
-    padding: 0 44px 14px 38px;
+    padding: 0 44px 13px 38px;
     margin: 0 -44px 0 -38px;
   }
 
   &__row {
-    padding: 20px 0;
+    padding: 19px 0 18px;
+  }
+
+  &__name {
+    display: none;
   }
 
   &__bottom {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .table {
+    padding: 30px;
+
+    &__head,
+    &__row {
+      grid-template-columns: 17% 12% 16% 1fr 14% 80px;
+      gap: 10px;
+    }
+
+    &__head {
+      padding: 0 30px 13px;
+      margin: 0 -30px 0;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .table {
+    padding: 0;
+    background: initial;
+
+    &__body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    &__row {
+      position: relative;
+      grid-template-columns: 1fr;
+
+      padding: 15px;
+
+      background: $white;
+      border-bottom: none;
+      border-radius: 10px;
+    }
+
+    &__head {
+      display: none;
+    }
+
+    &__name {
+      display: inline;
+    }
+
+    &__status {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .table {
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    &__body {
+      grid-template-columns: initial;
+      margin-top: 15px;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+
+      margin-top: 20px;
+    }
   }
 }

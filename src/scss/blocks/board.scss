@@ -1,9 +1,29 @@
 .board {
-  padding: 40px 90px 40px 70px;
+  padding: 40px 78px 40px 71px;
 
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 53px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .board {
+    padding: 30px 20px 50px;
+
+    &__container {
+      gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .board {
+    padding: 20px 15px 40px;
+
+    &__container {
+      gap: 15px;
+    }
   }
 }

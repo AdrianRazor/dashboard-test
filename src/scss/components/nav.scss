@@ -2,7 +2,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 19px;
+    gap: 18px;
   }
 
   &__item {
@@ -10,7 +10,7 @@
     align-items: center;
     gap: 14px;
 
-    padding: 11px 8px 11px;
+    padding: 11px 10px;
 
     letter-spacing: -0.14px;
     color: $grey;
@@ -25,5 +25,19 @@
 
   &__arrow {
     margin-left: auto;
+  }
+}
+
+@media (max-width: 1279px) {
+  .nav {
+    &__item {
+      p {
+        display: none;
+      }
+    }
+
+    &__arrow {
+      display: none;
+    }
   }
 }
