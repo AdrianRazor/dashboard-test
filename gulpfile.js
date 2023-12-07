@@ -1,13 +1,10 @@
 import gulp from "gulp";
 import autoprefixer from "gulp-autoprefixer";
 import browserSync from "browser-sync";
-import concat from "gulp-concat";
 import cssnano from "gulp-cssnano";
 import del from "del";
-import imagemin from "gulp-imagemin";
 import sass from "gulp-dart-sass";
 import sourcemaps from "gulp-sourcemaps";
-import uglify from "gulp-uglify";
 
 // HTML task
 export function html() {
@@ -30,16 +27,6 @@ export function scss() {
     .pipe(browserSync.stream());
 }
 
-// JS task
-export function js() {
-  return gulp
-    .src("src/js/**/*.js")
-    .pipe(concat("main.js"))
-    .pipe(uglify())
-    .pipe(gulp.dest("dist/js/"))
-    .pipe(browserSync.stream());
-}
-
 // Image task
 export function img() {
   return gulp
@@ -53,14 +40,6 @@ export function fonts() {
   return gulp
     .src("src/fonts/**/*")
     .pipe(gulp.dest("dist/fonts/"))
-    .pipe(browserSync.stream());
-}
-
-// Libs task
-export function libs() {
-  return gulp
-    .src("src/libs/**/*")
-    .pipe(gulp.dest("dist/libs/"))
     .pipe(browserSync.stream());
 }
 
@@ -79,15 +58,13 @@ export function watch() {
 
   gulp.watch("src/**/*.html", html).on("all", browserSync.reload);
   gulp.watch("src/scss/**/*.scss", scss).on("all", browserSync.reload);
-  gulp.watch("src/js/**/*.js", js).on("all", browserSync.reload);
   gulp.watch("src/img/**/*", img);
   gulp.watch("src/fonts/**/*", fonts);
-  gulp.watch("src/libs/**/*", libs);
 }
 
 // Default task
 export const dev = gulp.series(
   clean,
-  gulp.parallel(html, scss, js, img, fonts, libs),
+  gulp.parallel(html, scss, img, fonts),
   watch
 );
